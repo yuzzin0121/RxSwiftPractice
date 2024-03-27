@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        let rootViewController = UINavigationController(rootViewController: SimplePickerViewExampleViewController())
+        let rootViewController = UINavigationController(rootViewController: NumbersViewController())
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
