@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615E1EE72BB49B0A00EDCA93 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 615E1EE62BB49B0A00EDCA93 /* RxCocoa */; };
+		615E1EE92BB49B0A00EDCA93 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 615E1EE82BB49B0A00EDCA93 /* RxSwift */; };
+		615E1EEE2BB49B4B00EDCA93 /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EED2BB49B4B00EDCA93 /* SimplePickerViewExampleViewController.swift */; };
+		615E1EF02BB49B6E00EDCA93 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EEF2BB49B6E00EDCA93 /* NumbersViewController.swift */; };
+		615E1EF22BB49B7A00EDCA93 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EF12BB49B7A00EDCA93 /* SimpleValidationViewController.swift */; };
+		615E1EF42BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EF32BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift */; };
 		61F0BAAF2BB2D07600C9349E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAAE2BB2D07600C9349E /* AppDelegate.swift */; };
 		61F0BAB12BB2D07600C9349E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAB02BB2D07600C9349E /* SceneDelegate.swift */; };
 		61F0BAB32BB2D07600C9349E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAB22BB2D07600C9349E /* ViewController.swift */; };
@@ -16,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615E1EED2BB49B4B00EDCA93 /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
+		615E1EEF2BB49B6E00EDCA93 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		615E1EF12BB49B7A00EDCA93 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		615E1EF32BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleViewController.swift; sourceTree = "<group>"; };
 		61F0BAAB2BB2D07600C9349E /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F0BAAE2BB2D07600C9349E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F0BAB02BB2D07600C9349E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +41,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615E1EE92BB49B0A00EDCA93 /* RxSwift in Frameworks */,
+				615E1EE72BB49B0A00EDCA93 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		615E1EEC2BB49B2100EDCA93 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				615E1EED2BB49B4B00EDCA93 /* SimplePickerViewExampleViewController.swift */,
+				615E1EEF2BB49B6E00EDCA93 /* NumbersViewController.swift */,
+				615E1EF12BB49B7A00EDCA93 /* SimpleValidationViewController.swift */,
+				615E1EF32BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		61F0BAA22BB2D07600C9349E = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,7 @@
 		61F0BAAD2BB2D07600C9349E /* RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				615E1EEC2BB49B2100EDCA93 /* Examples */,
 				61F0BAAE2BB2D07600C9349E /* AppDelegate.swift */,
 				61F0BAB02BB2D07600C9349E /* SceneDelegate.swift */,
 				61F0BAB22BB2D07600C9349E /* ViewController.swift */,
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = RxSwiftPractice;
+			packageProductDependencies = (
+				615E1EE62BB49B0A00EDCA93 /* RxCocoa */,
+				615E1EE82BB49B0A00EDCA93 /* RxSwift */,
+			);
 			productName = RxSwiftPractice;
 			productReference = 61F0BAAB2BB2D07600C9349E /* RxSwiftPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 61F0BAA22BB2D07600C9349E;
+			packageReferences = (
+				615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 61F0BAAC2BB2D07600C9349E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F0BAB32BB2D07600C9349E /* ViewController.swift in Sources */,
+				615E1EF42BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift in Sources */,
+				615E1EF22BB49B7A00EDCA93 /* SimpleValidationViewController.swift in Sources */,
+				615E1EEE2BB49B4B00EDCA93 /* SimplePickerViewExampleViewController.swift in Sources */,
+				615E1EF02BB49B6E00EDCA93 /* NumbersViewController.swift in Sources */,
 				61F0BAAF2BB2D07600C9349E /* AppDelegate.swift in Sources */,
 				61F0BAB12BB2D07600C9349E /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +398,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		615E1EE62BB49B0A00EDCA93 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		615E1EE82BB49B0A00EDCA93 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61F0BAA32BB2D07600C9349E /* Project object */;
 }
