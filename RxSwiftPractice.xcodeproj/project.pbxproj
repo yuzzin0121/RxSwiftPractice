@@ -13,6 +13,7 @@
 		615E1EF02BB49B6E00EDCA93 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EEF2BB49B6E00EDCA93 /* NumbersViewController.swift */; };
 		615E1EF22BB49B7A00EDCA93 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EF12BB49B7A00EDCA93 /* SimpleValidationViewController.swift */; };
 		615E1EF42BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E1EF32BB49C0300EDCA93 /* SimpleTableViewExampleViewController.swift */; };
+		615E1EF72BB49EF100EDCA93 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 615E1EF62BB49EF100EDCA93 /* SnapKit */; };
 		61F0BAAF2BB2D07600C9349E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAAE2BB2D07600C9349E /* AppDelegate.swift */; };
 		61F0BAB12BB2D07600C9349E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAB02BB2D07600C9349E /* SceneDelegate.swift */; };
 		61F0BAB32BB2D07600C9349E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0BAB22BB2D07600C9349E /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615E1EF72BB49EF100EDCA93 /* SnapKit in Frameworks */,
 				615E1EE92BB49B0A00EDCA93 /* RxSwift in Frameworks */,
 				615E1EE72BB49B0A00EDCA93 /* RxCocoa in Frameworks */,
 			);
@@ -110,6 +112,7 @@
 			packageProductDependencies = (
 				615E1EE62BB49B0A00EDCA93 /* RxCocoa */,
 				615E1EE82BB49B0A00EDCA93 /* RxSwift */,
+				615E1EF62BB49EF100EDCA93 /* SnapKit */,
 			);
 			productName = RxSwiftPractice;
 			productReference = 61F0BAAB2BB2D07600C9349E /* RxSwiftPractice.app */;
@@ -141,6 +144,7 @@
 			mainGroup = 61F0BAA22BB2D07600C9349E;
 			packageReferences = (
 				615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				615E1EF52BB49EF100EDCA93 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 61F0BAAC2BB2D07600C9349E /* Products */;
 			projectDirPath = "";
@@ -408,6 +412,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		615E1EF52BB49EF100EDCA93 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -420,6 +432,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 615E1EE52BB49B0A00EDCA93 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		615E1EF62BB49EF100EDCA93 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 615E1EF52BB49EF100EDCA93 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
